@@ -7,7 +7,10 @@ import MyProfilePic from './components/MyProfilePic';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Bohdan's Blog",
+  title: {
+    template: "%s | Bohdan's Blog",
+    default: "Bohdan's Blog",
+  },
   description: 'Created by Bohdan Shkaran',
 };
 
